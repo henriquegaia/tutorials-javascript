@@ -1,0 +1,55 @@
+===============================================
+Installation
+==============================================
+
+    https://www.youtube.com/watch?v=t_I8QoKTq_c&list=PLfdtiltiRHWHZh8C2G0xNRbcf0uyYzzK_&index=3
+
+    on root of project:
+        > npm install socket.io
+        > npm install mongodb
+
+
+==============================================
+browser console
+==============================================
+    var socket =io.connect('http://127.0.0.1:8080')
+    socket.emit('input',{"name": "alex", "message": "hello"});
+
+==============================================
+Set up
+==============================================
+
+    1- cmd
+
+        cd..
+        cd..
+        cd Program Files\MongoDB\Server\3.2\bin
+        >mongod.exe
+
+    2- cmd
+
+        cd..
+        cd..
+        cd Program Files\MongoDB\Server\3.2\bin
+        >mongo.exe
+
+    3- cmd
+
+        cd..
+        cd..
+        cd xampp\htdocs\_projetos\Chat_projects\codecourse-nodejs-mogodb-chat-struct
+        >node chat_server.js
+
+    4- open project
+
+
+==============================================
+access db on cmd
+==============================================
+
+    -access database
+        -use chat  
+    -access collection (table)
+        -db.messages.find()
+        -db.messages.remove({})
+        -db.messages.insert({"name": "alex", "message": "hello"})
